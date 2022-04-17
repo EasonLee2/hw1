@@ -101,13 +101,88 @@
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
+DROP TABLE IF EXISTS publishers;
+DROP TABLE IF EXISTS years;
+DROP TABLE IF EXISTS ratings;
+DROP TABLE IF EXISTS characters;
+DROP TABLE IF EXISTS actors;
+DROP TABLE IF EXISTS titles;
 
 -- Create new tables, according to your domain model
 -- TODO!
+CREATE TABLE publishers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  publisher_name TEXT,
+);
+
+CREATE TABLE years (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  year_date INTEGER,
+);
+
+CREATE TABLE ratings (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  rating_des TEXT,
+);
+
+CREATE TABLE characters (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  character_name TEXT,
+);
+
+CREATE TABLE actors (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  actor_name TEXT,
+);
+
+CREATE TABLE titles (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title_name TEXT,
+);
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+INSERT INTO publishers (publisher_name)
+VALUES ("Warner Bros.");
+
+INSERT INTO years (year_date)
+VALUES (2005),
+VALUES (2008),
+VALUES (2012);
+
+INSERT INTO ratings (rating_des)
+VALUES ("PG-13");
+
+INSERT INTO characters (character_name)
+VALUES ("Bruce Wayne"),
+VALUES ("Alfred"),
+VALUES ("Ra's Al Ghul"),
+VALUES ("Rachel Dawes"),
+VALUES ("Commissioner Gordon"),
+VALUES ("Joker"),
+VALUES ("Harvey Dent"),
+VALUES ("Bane"),
+VALUES ("John Blake"),
+VALUES ("Selina Kyle");
+
+INSERT INTO actors (actor_name)
+VALUES ("Christian Bale"),
+VALUES ("Michael Caine"),
+VALUES ("Liam Neeson"),
+VALUES ("Katie Holmes"),
+VALUES ("Gary Oldman"),
+VALUES ("Heath Ledger"),
+VALUES ("Aaron Eckhart"),
+VALUES ("Maggie Gyllenhaal"),
+VALUES ("Tom Hardy"),
+VALUES ("Joseph Gordon-Levitt"),
+VALUES ("Anne Hathaway");
+
+INSERT INTO titles (title_name)
+VALUES ("Batman Begins"),
+VALUES ("The Dark Knight"),
+VALUES ("The Dark Knight Rises"),
 
 -- Prints a header for the movies output
 .print "Movies"
