@@ -112,32 +112,32 @@ DROP TABLE IF EXISTS titles;
 -- TODO!
 CREATE TABLE publishers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  publisher_name TEXT,
+  publisher_name TEXT
 );
 
 CREATE TABLE years (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  year_date INTEGER,
+  year_date INTEGER
 );
 
 CREATE TABLE ratings (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  rating_des TEXT,
+  rating_des TEXT
 );
 
 CREATE TABLE characters (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  character_name TEXT,
+  character_name TEXT
 );
 
 CREATE TABLE actors (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  actor_name TEXT,
+  actor_name TEXT
 );
 
 CREATE TABLE titles (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  title_name TEXT,
+  title_name TEXT
 );
 
 -- Insert data into your database that reflects the sample data shown above
@@ -146,57 +146,53 @@ CREATE TABLE titles (
 INSERT INTO publishers (publisher_name)
 VALUES ("Warner Bros.");
 
-INSERT INTO years (year_date)
-VALUES (2005),
-VALUES (2008),
-VALUES (2012);
+INSERT INTO years (year_date) VALUES (2005);
+INSERT INTO years (year_date) VALUES (2008);
+INSERT INTO years (year_date) VALUES (2012);
 
 INSERT INTO ratings (rating_des)
 VALUES ("PG-13");
 
-INSERT INTO characters (character_name)
-VALUES ("Bruce Wayne"),
-VALUES ("Alfred"),
-VALUES ("Ra's Al Ghul"),
-VALUES ("Rachel Dawes"),
-VALUES ("Commissioner Gordon"),
-VALUES ("Joker"),
-VALUES ("Harvey Dent"),
-VALUES ("Bane"),
-VALUES ("John Blake"),
-VALUES ("Selina Kyle");
+INSERT INTO characters (character_name) VALUES ("Bruce Wayne");
+INSERT INTO characters (character_name) VALUES ("Alfred");
+INSERT INTO characters (character_name) VALUES ("Ra's Al Ghul");
+INSERT INTO characters (character_name) VALUES ("Rachel Dawes");
+INSERT INTO characters (character_name) VALUES ("Commissioner Gordon");
+INSERT INTO characters (character_name) VALUES ("Joker");
+INSERT INTO characters (character_name) VALUES ("Harvey Dent");
+INSERT INTO characters (character_name) VALUES ("Bane");
+INSERT INTO characters (character_name) VALUES ("John Blake");
+INSERT INTO characters (character_name) VALUES ("Selina Kyle");
 
-INSERT INTO actors (actor_name)
-VALUES ("Christian Bale"),
-VALUES ("Michael Caine"),
-VALUES ("Liam Neeson"),
-VALUES ("Katie Holmes"),
-VALUES ("Gary Oldman"),
-VALUES ("Heath Ledger"),
-VALUES ("Aaron Eckhart"),
-VALUES ("Maggie Gyllenhaal"),
-VALUES ("Tom Hardy"),
-VALUES ("Joseph Gordon-Levitt"),
-VALUES ("Anne Hathaway");
+INSERT INTO actors (actor_name) VALUES ("Christian Bale");
+INSERT INTO actors (actor_name) VALUES ("Michael Caine");
+INSERT INTO actors (actor_name) VALUES ("Liam Neeson");
+INSERT INTO actors (actor_name) VALUES ("Katie Holmes");
+INSERT INTO actors (actor_name) VALUES ("Gary Oldman");
+INSERT INTO actors (actor_name) VALUES ("Heath Ledger");
+INSERT INTO actors (actor_name) VALUES ("Aaron Eckhart");
+INSERT INTO actors (actor_name) VALUES ("Maggie Gyllenhaal");
+INSERT INTO actors (actor_name) VALUES ("Tom Hardy");
+INSERT INTO actors (actor_name) VALUES ("Joseph Gordon-Levitt");
+INSERT INTO actors (actor_name) VALUES ("Anne Hathaway");
 
-INSERT INTO titles (title_name)
-VALUES ("Batman Begins"),
-VALUES ("The Dark Knight"),
-VALUES ("The Dark Knight Rises"),
+INSERT INTO titles (title_name) VALUES ("Batman Begins");
+INSERT INTO titles (title_name) VALUES ("The Dark Knight");
+INSERT INTO titles (title_name) VALUES ("The Dark Knight Rises");
 
 -- Prints a header for the movies output
-.print "Movies"
-.print "======"
-.print ""
+--.print "Movies"
+--.print "======"
+--.print ""
 
 -- The SQL statement for the movies output
 -- TODO!
 
 -- Prints a header for the cast output
-.print ""
-.print "Top Cast"
-.print "========"
-.print ""
+--.print ""
+--.print "Top Cast"
+--.print "========"
+--.print ""
 
 
 -- The SQL statement for the cast output
