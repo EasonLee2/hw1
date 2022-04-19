@@ -98,6 +98,7 @@
 -- Turns column mode on but headers off
 .mode column
 .headers off
+.width 21 20 20
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
@@ -193,9 +194,10 @@ INSERT INTO actors (actor_name) VALUES ("Tom Hardy");
 INSERT INTO actors (actor_name) VALUES ("Joseph Gordon-Levitt");
 INSERT INTO actors (actor_name) VALUES ("Anne Hathaway");
 
-INSERT INTO titles (title_name) VALUES ("Batman Begins");
-INSERT INTO titles (title_name) VALUES ("The Dark Knight");
-INSERT INTO titles (title_name) VALUES ("The Dark Knight Rises");
+--NOTE: Below code is for my own reference on how to insert multiple elements using one INSERT INTO command
+INSERT INTO titles (title_name) VALUES ("Batman Begins"), ("The Dark Knight"), ("The Dark Knight Rises");
+--INSERT INTO titles (title_name) VALUES ("The Dark Knight");
+--INSERT INTO titles (title_name) VALUES ("The Dark Knight Rises");
 
 INSERT INTO movies (title_id, year_id, rating_id, publisher_id) VALUES (1,1,1,1);
 INSERT INTO movies (title_id, year_id, rating_id, publisher_id) VALUES (2,2,1,1);
